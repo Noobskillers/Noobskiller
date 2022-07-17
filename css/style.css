@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .toogler {
+    margin-left: -50px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 80px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  user-select: none !important;
+  padding: 0;
+  margin: 0;
+}
+.flex {
+  display: flex;
+}
+.fg {
+  flex-grow: 1;
+}
+
+/*Header*/
+/* Header */
+/* The side navigation menu */
+header {
+  display: inline;
+}
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: white;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #7D96E0;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: royalblue;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: royalblue;
+  color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  .jumbotron h1 {
+    font-size: 1.5rem;
+  }
+  .jumbotron p {
+    font-size: 1rem;
+  }
+}
+/*End Header*/
+
+
+/*Main*/
+.toogler {
+  border: 2px solid white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.7s;
+  box-shadow: 2px 2px 10px lightgrey;
+}
+.toogler:hover {
+  background-color: white;
+  color: royalblue;
+  transition: 0.7s;
+}
+
+.jumbotron .down:hover {
+  transition: 2s;
+  transform: translateY(90px);
+}
+
+#demoA {
+  width: 100%;
+  overflow-x: auto;
+}
+
+
+
+th, td {
+  transition: 1s;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 10px lightgrey;
+  cursor: pointer;
+}
+th, td:hover {
+  transition: 1s;
+  transform: scale(0.8);
+}
+
+input[type=text],
+input[type=password],
+input[type=number],
+input[type=date],
+input[type=email],
+textarea,
+select {
+   width: 100%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+input[type="text"]:focus, 
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+    box-shadow: none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 5px royalblue!important;
+    outline: 0 none !important;
+}
+
+.mb-3 {
+  margin-bottom: 20px;
+}
+
+#content {
+  float: right;
+  width: 67%;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+article h2 span {
+  text-align: left;
+  border-bottom: 4px solid royalblue;
+}
+
+article p {
+  text-align: justify;
+}
+
+.card {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 3px 3px 20px  lightgrey;
+  border: 1px solid lightgrey;
+  padding: 20px;
+  margin: 0 0 20px 0;
+  overflow-x: auto;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+}
+
+.aa {
+  width: 25%;
+}
+.m-5 {
+  margin: 20px;
+}
+/*End Main*/
+
+
+/*aside*/
+aside {
+  float: left;
+  width: 33%;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+  main {
+    padding: 10px;
+    overflow: auto;
+  }
+  .aa {
+    width: 100%;
+  }
+  th, td {
+    font-size: 0.8rem;
+  }
+}
+/*end aside*/
+
+
+/*Footer*/
+footer {
+  background-color: royalblue;
+  padding: 20px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+}
+/*Footer*/
+
+.white {
+  color: white;
+}
+.between {
+  justify-content: space-between;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 4rem 5vw;
+  padding: 0;
+}
+
+.cardd {
+  box-shadow: 2px 2px 10px lightgrey;
+  padding-bottom: 30px;
+  position: relative;
+  display: block;
+  height: 100%;  
+  border-radius: 7px;
+  overflow: auto;
+  text-decoration: none;
+  padding-top: 35px;
+  width: 250px;
+}
+

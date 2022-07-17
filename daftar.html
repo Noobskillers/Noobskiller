@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fontawesome Icon -->
+    <script src="https://kit.fontawesome.com/348c676099.js" crossorigin="anonymous"></script>
+    <title>Adaro</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html"><i class="fas fa-house-user"></i> Beranda</a>
+          <a href="masuk.html"><i class="fas fa-sign-in-alt"></i> Masuk</a>
+          <a href="daftar.html"><i class="fas fa-file-alt"></i> Daftar</a>
+          <a href="data_pelamar.html"><i class="fas fa-users"></i> Data Pelamar</a>
+          <a href="history.html"><i class="fas fa-history"></i> History</a>
+          <a href="vision.html"><i class="fas fa-users"></i> Visi Misi</a>
+          <a href="struktur.html"><i class="fas fa-users"></i> Struktur Organisasi</a>
+          <a href="award.html"><i class="fas fa-medal"></i> Penghargaan</a>
+        </div>
+
+        <div class="jumbotron">
+        <!-- Use any element to open the sidenav -->
+        <span onclick="openNav()" class="btn toogler text-white m-5"><i class="fas fa-bars"></i> Menu</span>
+        <center>
+            <h1>Sistem Rekrutmen PT. Adaro Energy Tbk.</h1>
+            <p>Persiapkan diri anda menuju masa depan yang cerah!</p>
+            <a href="#main"><i class="fas fa-angle-double-down down white"></i></a>
+        </center>
+        </div>
+    </header>
+
+    <!-- Waves -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="royalblue" fill-opacity="1" d="M0,160L48,144C96,128,192,96,288,101.3C384,107,480,149,576,176C672,203,768,213,864,181.3C960,149,1056,75,1152,42.7C1248,11,1344,21,1392,26.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+
+    <main id="main">
+
+        <aside>
+            <article>
+                <h2><span>Lowongan Pekerjaan</span></h2>
+                <ul>
+                    <li>Adaro Mining : 10 Posisi Tersedia</li>
+                    <li>Adaro Services : 1 Posisi Tersedia</li>
+                    <li>Adaro Logistics : 7 Posisi Tersedia</li>
+                    <li>Adaro Power : 7 Posisi Tersedia</li>
+                </ul>
+            </article>
+        </aside>
+
+        <div id="content">
+            
+            <article>
+                <h2 align="center">Daftar Akun</h2>
+                <form action="" id="register">
+                    <div class="mb-3">
+                        <input type="text" id="nama" name="nama" placeholder="Nama Lengkap">
+                    </div>
+                    <div class="mb-3">
+                        <textarea id="alamat" name="alamat" placeholder="Alamat Lengkap"></textarea> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="tanggal_lahir">Tanggal Lahir</label><br>
+                        <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" id="email" name="email" placeholder="Alamat Email">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" id="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" id="nomor_telepon" name="nomor_telepon" placeholder="Nomor Telepon">
+                    </div>
+                    <button class="btn toogler" onclick="return validateRegister()">Daftar</button>
+                </form>
+            </article>
+           
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&#169 PT. Adaro Energy Tbk.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
